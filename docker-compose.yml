@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   db:
     image: postgres:15
@@ -12,7 +10,7 @@ services:
       POSTGRES_USER: springuser
       POSTGRES_PASSWORD: springpass
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - lunar:/var/lib/postgresql/data
 
 volumes:
-  postgres_data:
+  lunar:
